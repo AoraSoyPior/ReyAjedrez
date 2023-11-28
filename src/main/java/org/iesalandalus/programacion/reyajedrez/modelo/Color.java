@@ -16,10 +16,4 @@ public enum Color {
     public String toString() {
         return cadenaAMostrar;
     }
-
-    public static void main(String[] args) {
-        // Ejemplo de uso del enum Color
-        Color miColor = Color.BLANCO;
-        System.out.println(miColor);  // Salida: Blanco
-    }
 }

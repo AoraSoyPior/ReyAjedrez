@@ -1,6 +1,10 @@
 package org.iesalandalus.programacion.reyajedrez;
+import org.iesalandalus.programacion.reyajedrez.modelo.Color;
+import org.iesalandalus.programacion.reyajedrez.modelo.Direccion;
+import org.iesalandalus.programacion.reyajedrez.modelo.Rey;
+import org.iesalandalus.programacion.utilidades.Entrada;
 import java.util.InputMismatchException;
-
+import javax.naming.OperationNotSupportedException;
 public class MainApp {
     private static Rey rey; // Atributo de clase Rey
 
@@ -95,7 +99,6 @@ public class MainApp {
                 opcionValida = opcion >= 1 && opcion <= 5;
             } catch (InputMismatchException e) {
                 System.out.println("Error: Debes introducir un número entero.");
-                Entrada.limpiarBuffer(); // Limpiar el buffer de entrada
             }
 
             if (!opcionValida) {
