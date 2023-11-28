@@ -44,7 +44,7 @@ public class Posicion {
     // Setter para fila con validación
     public void setFila(int fila) {
         if (fila < 1 || fila > 8) {
-            throw new IllegalArgumentException("La fila debe estar entre 1 y 8, inclusive.");
+            throw new IllegalArgumentException("La fila debe estar entre 1 y 8");
         }
         this.fila = fila;
     }
@@ -57,7 +57,7 @@ public class Posicion {
     // Setter para columna con validación
     public void setColumna(char columna) {
         if (columna < 'a' || columna > 'h') {
-            throw new IllegalArgumentException("La columna debe estar entre 'a' y 'h', inclusive.");
+            throw new IllegalArgumentException("La columna debe estar entre 'a' y 'h'");
         }
         this.columna = columna;
     }
